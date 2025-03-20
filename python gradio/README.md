@@ -41,9 +41,11 @@ Este proyecto implementa una interfaz de usuario basada en **Gradio** que permit
      Ejecuta el siguiente comando para instalar las librerías necesarias:  
      ```bash
      pip install flask waitress requests gradio langchain-openai langchain-aws nest_asyncio pydantic
+     pip install browser-use
+     playwright install
      ```
 
-     > **Nota:** Asegúrate de tener configuradas las claves de API para **OpenAI** y **AWS Bedrock** en un archivo `.env` si es necesario.
+     > **Nota:** Asegúrate de tener configuradas las claves de API para **OpenAI** y **AWS Bedrock** en un archivo `.env` la variable de entorno debe ser OPENAI_API_KEY= <TuApiKey>.
 
 4. **Verificar el puerto**  
      - **Flask** usa el puerto `5000` por defecto.  
